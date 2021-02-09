@@ -1,0 +1,28 @@
+#why {
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url('./background.png');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  color: white;
+  background-color: #1b2232;
+
+  min-height: 90vh;
+  max-height: 90vh;
+  justify-content: center;
+
+  p {
+    display:block;
+    padding-left: 50%;
+    padding-top: 50px;
+    margin-top: 40px;
+    text-align: left;
+    clear: both;
+    white-space: normal;
+    word-wrap: normal;
+    text-align: left;
+    font-family: "Open Sans", Helvetica Neue, Sans-serif;
+    font-size: 1rem;
+    line-height: 28px;
+  }
+}

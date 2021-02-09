@@ -1,23 +1,49 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import React from 'react';
+import HeaderBar from './components/header-bar';
+import IntroSection from './components/intro-section';
+import WhySection from './components/why-section';
+import HowSection from './components/how-section';
+import CommunitySection from './components/community-section';
+import ContactSection from './components/contact-section';
+import FooterSection from './components/footer-section';
 
 function App() {
+  let links = [
+    {
+      caption: 'Why the Caribbean?'
+    },
+    {
+      caption: 'How?'
+    },
+    {
+      caption: 'Get Hired'
+    },
+    {
+      caption: 'Our Services'
+    },
+    {
+      caption: 'Clients'
+    },
+    {
+      caption: 'Contact'
+    }
+  ];
+
+  const doIntroCaption = () => (<p>WORLD-CLASS DEVELOPERS<br/>CARIBBEAN'S FINEST TALENT</p>)
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <HeaderBar links={links}></HeaderBar>
+      <div className='header-filler'/>
+      <IntroSection
+        headingCaption={doIntroCaption()}
+        buttonCaption={`JOIN THE TEAM`}
+      />
+      <WhySection/>
+      <HowSection/>
+      <CommunitySection/>
+      <ContactSection/>
+      <FooterSection/>
     </div>
   );
 }

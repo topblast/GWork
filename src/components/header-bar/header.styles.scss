@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron');
+
+$headerFontColor: #0f406b;
+$headerHeight: 10vh;
+
+.header-section {
+  min-height: $headerHeight;
+}
+
+.header-container {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center !important;
+  align-content: center !important; 
+}
+
+.link-container {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center !important;
+  align-content: center !important; 
+  
+  .nav-link a{
+    margin: 0 1rem;
+    font-family: Orbitron-Light, Orbitron;
+    color: $headerFontColor;
+    font-size: 1rem;
+  }
+}
+
+
+.logo-container {
+  font-family: Orbitron;
+  float: left;
+  img {
+    min-height: $headerHeight;
+    max-height: $headerHeight;
+    vertical-align: middle;
+  }
+}
